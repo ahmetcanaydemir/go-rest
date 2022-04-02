@@ -1,6 +1,8 @@
-[![CI](https://github.com/ahmetcanaydemir/go-rest/actions/workflows/go.yml/badge.svg)](https://github.com/ahmetcanaydemir/go-rest/actions/workflows/go.yml)
-
 # Go Rest
+
+You can use this [heroku URL](https://go-restful-app.herokuapp.com/) for testing the API server in this repository.
+
+[![CI](https://github.com/ahmetcanaydemir/go-rest/actions/workflows/go.yml/badge.svg)](https://github.com/ahmetcanaydemir/go-rest/actions/workflows/go.yml)
 
 ## Libraries
 
