@@ -1,3 +1,5 @@
+[![CI](https://github.com/ahmetcanaydemir/go-rest/actions/workflows/go.yml/badge.svg)](https://github.com/ahmetcanaydemir/go-rest/actions/workflows/go.yml)
+
 # Go Rest
 
 ## Libraries
