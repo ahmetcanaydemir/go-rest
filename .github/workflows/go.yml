@@ -1,0 +1,44 @@
+name: Go
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+env:
+  MONGO_URI: ${{ secrets.MONGO_URI }}
+
+jobs:
+
+  ci:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Go
+      uses: actions/setup-go@v3
+      with:
+        go-version: 1.18
+        
+    - name: Install
+      run: |
+        go get -v ./...
+        
+    - name: Lint
+      run: |
+        curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh
+        ./bin/golangci-lint run -v
+        
+    - name: Test
+      run: |
+        go test -v ./...
+        
+    - name: Coverage
+      run: |
+        go test ./...  -coverpkg=./... -coverprofile ./coverage.out
+        go tool cover -func ./coverage.out
+
+    - name: Build
+      run: go build -o build
+    
