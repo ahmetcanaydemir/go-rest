@@ -15,7 +15,7 @@ You can use this [heroku URL](https://go-restful-app.herokuapp.com/) for testing
 
     `export MONGO_URI="mongodb+srv://mongouri..."`
 
-2. You can run locally or with docker. Choose one of the following commands.
+2. You can run locally or with docker. Choose one of the following commands. [Go 1.18](https://go.dev/dl/) required for local run.
 
     - **Docker:** `docker compose up`
     - **Local:** `make run`
