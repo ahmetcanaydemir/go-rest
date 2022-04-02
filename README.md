@@ -126,8 +126,8 @@ This endpoint fetch data and filter with given values.
 
 | Field                   | Type                   | Description                                   |
 |-------------------------|------------------------|-----------------------------------------------|
-| `startDate` (required)  | string (YYY-MM-DD)     | The record is created after this date.        |
-| `endDate` (required)    | string (YYY-MM-DD)     | The record is created before this date.       |
+| `startDate` (required)  | string (YYYY-MM-DD)     | The record is created after this date.        |
+| `endDate` (required)    | string (YYYY-MM-DD)     | The record is created before this date.       |
 | `minCount` (required)   | int                    | TotalCount value is bigger than this value.   |
 | `maxCount` (required)   | int                    | TotalCount value is less than this value.     |
 
