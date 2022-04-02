@@ -29,7 +29,7 @@ func main() {
 	controller.NewInMemoryController()
 	controller.NewMongoController()
 
-	// Ser	ver
+	// Server
 	fmt.Println("⚡ HTTP server is running at http://localhost:" + configs.Server.Config.Port)
 	log.Fatal(http.ListenAndServe(":"+configs.Server.Config.Port, nil))
 }
